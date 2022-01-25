@@ -25,7 +25,7 @@ abstract class BasePing {
   int? count;
 
   /// Delay between ping attempts
-  int interval;
+  double interval;
 
   /// How long to wait for a ping to return before marking it as lost
   int timeout;

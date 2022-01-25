@@ -10,7 +10,7 @@ class DartPingIOS implements Ping {
     Ping.iosFactory = _init;
   }
 
-  static DartPingIOS _init(String host, int? count, int interval, int timeout,
+  static DartPingIOS _init(String host, int? count, double interval, int timeout,
       int ttl, bool ipv6, PingParser? parser, Encoding encoding) {
     return DartPingIOS(fp.Ping(host,
         count: count,

@@ -21,7 +21,7 @@ abstract class Ping {
       int? count,
 
       /// Delay between ping attempts
-      int interval = 1,
+      double interval = 1,
 
       /// How long to wait for a ping to return before marking it as lost
       int timeout = 2,
@@ -63,7 +63,7 @@ abstract class Ping {
     }
   }
 
-  static Ping Function(String host, int? count, int interval, int timeout,
+  static Ping Function(String host, int? count, double interval, int timeout,
       int ttl, bool ipv6, PingParser? parser, Encoding encoding)? iosFactory;
 
   /// Parser used to interpret ping process output

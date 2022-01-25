@@ -7,7 +7,7 @@ import 'package:dart_ping/src/ping_interface.dart';
 
 class PingWindows extends BasePing implements Ping {
   PingWindows(
-      String host, int? count, int interval, int timeout, int ttl, bool ipv6,
+      String host, int? count, double interval, int timeout, int ttl, bool ipv6,
       {PingParser? parser, Encoding encoding = const Utf8Codec()})
       : super(host, count, interval, timeout, ttl, ipv6, parser ?? _parser,
             encoding);
